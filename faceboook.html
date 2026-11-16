@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+  
+        .left {
+            width: 57%;
+            min-height: 100vh;
+            padding: 30px 25px;
+            border-right: 1px solid #ddd;
+        }
+
+      
+        .logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .left-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .left h1 {
+            font-size: 38px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            flex-shrink: 0;
+            color: #080809;
+        }
+
+        .left h1 span {
+            color: #0866ff;
+        }
+
+  
+        .left-content .collage {
+            width: 58%;
+            max-width: 400px;
+            height: 400px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+        }
+
+        /* RIGHT SECTION */
+        .right {
+            width: 43%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 335px;
+        }
+
+        .login-box h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .login-box input {
+            display: block;
+            width: 100%;
+            padding: 13px 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            font-size: 12px;
+            outline: none;
+        }
+
+        .login-box input:focus {
+            border-color: #0866ff;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 13px;
+            margin-top: 6px;
+            background: #0866ff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .forgot {
+            display: block;
+            text-align: center;
+            margin: 15px 0 40px;
+            font-size: 12px;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .separator {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .create-btn {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #0866ff;
+            border-radius: 25px;
+            color: #0866ff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .meta {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 15px;
+            color: #222;
+        }
+
+        .meta span {
+            color: #0866ff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        
+        @media (max-width: 900px) {
+            .left {
+                width: 50%;
+                padding: 25px 18px;
+            }
+
+            .right {
+                width: 50%;
+                padding: 20px;
+            }
+
+            .left-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .left h1 {
+                font-size: 32px;
+            }
+
+            .left-content .collage {
+                width: 100%;
+                max-width: 400px;
+                height: 350px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+                min-height: auto;
+            }
+
+            .left {
+                border-right: none;
+                padding: 20px;
+            }
+
+            .left-content {
+                margin-top: 25px;
+                gap: 20px;
+            }
+
+            .left h1 {
+                font-size: 32px;
+            }
+
+            .left-content .collage {
+                width: 100%;
+                height: auto;
+                max-height: 400px;
+            }
+
+            .right {
+                padding: 35px 20px;
+            }
+
+            .forgot {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+   
+        <div class="left">
+
+            <div class="logo">
+                <img
+                    src="logofb.PNG"
+                    alt="Facebook Logo">
+            </div>
+
+            <div class="left-content">
+
+                <h1>
+                    Explore<br>
+                    the<br>
+                    things<br>
+                    <span>you love.</span>
+                </h1>
+
+                <img
+                    class="collage"
+                    src="facebookimg.png"
+                    alt="Social media collage">
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+            <div class="login-box">
+
+                <h3>Log in to Facebook</h3>
+
+                <form>
+                    <input
+                        type="text"
+                        placeholder="Email address or mobile number">
+
+                    <input
+                        type="password"
+                        placeholder="Password">
+
+                    <button type="button" class="login-btn">
+                        Log in
+                    </button>
+                </form>
+
+                <a href="#" class="forgot">
+                    Forgotten password?
+                </a>
+
+                <hr class="separator">
+
+                <a href="#" class="create-btn">
+                    Create new account
+                </a>
+
+                <div class="meta">
+                    <span>∞</span> Meta
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
