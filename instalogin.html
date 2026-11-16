@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: white;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left {
+            width: 65%;
+            height: 700px;
+            text-align: center;
+            border-right: 1px solid lightgray;
+        }
+
+        .logo {
+            text-align: left;
+            margin: 30px;
+            color: #d62976;
+            font-size: 35px;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: normal;
+        }
+
+        span {
+            color: #e1306c;
+        }
+
+        .photo {
+            width: 400px;
+            height: 350px;
+        }
+
+        .right {
+            width: 35%;
+            margin-top: 150px;
+            padding: 30px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 5px;
+            border: 1px solid lightgray;
+        }
+
+        button {
+            width: 98%;
+            padding: 10px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 20px;
+            background-color: #9fc2f3;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1877d2;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .facebook {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .create {
+            display: block;
+            text-align: center;
+            border: 1px solid blue;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="left">
+
+            <div class="logo">◎</div>
+
+            <h1>
+                See everyday<br>
+                moments from your<br>
+                <span>close friends.</span>
+            </h1>
+
+            <img src="insta.PNG"
+                 class="photo"
+                 alt="Instagram image">
+
+        </div>
+
+        <div class="right">
+
+            <h4>Log into Instagram</h4>
+
+            <form>
+                <input type="text"
+                       placeholder="Mobile number, username or email">
+
+                <br><br>
+
+                <input type="password"
+                       placeholder="Password">
+
+                <br><br>
+
+                <button type="button">Log in</button>
+            </form>
+
+            <p>
+                <a href="">
+                    Forgot password?
+                </a>
+            </p>
+
+            <br>
+
+            <button class="facebook" type="button">
+                Log in with Facebook
+            </button>
+
+            <a href=""
+               class="create">
+                Create new account
+            </a>
+
+            <p>Meta</p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
